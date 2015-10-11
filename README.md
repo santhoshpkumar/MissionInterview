@@ -82,3 +82,29 @@ The important thing to note here is the time complexity. Sure, we could construc
         Binary Heap
         Binomial Heap
         Fibonacci Heap
+        
+A **Binary Heap** is a Binary Tree with following properties.
+
+1) It’s a complete tree (All levels are completely filled except possibly the last level and the last level has all keys as left as possible). This property of Binary Heap makes them suitable to be stored in an array.
+
+2) A Binary Heap is either Min Heap or Max Heap. In a Min Binary Heap, the key at root must be minimum among all keys present in Binary Heap. The same property must be recursively true for all nodes in Binary Tree. Max Binary Heap is similar to Min Heap.
+
+Examples of Min Heap:
+            10                      10
+         /      \               /       \  
+       20        100          15         30  
+      /                      /  \        /  \
+    30                     40    50    100   40
+
+Applications of Heaps:
+
+1) Heap Sort: Heap Sort uses Binary Heap to sort an array in O(nLogn) time.
+
+2) Priority Queue: Priority queues can be efficiently implemented using Binary Heap because it supports insert(), delete() and extractmax(), decreaseKey() operations in O(logn) time. Binomoial Heap and Fibonacci Heap are variations of Binary Heap. These variations perform union also efficiently.
+
+3) Graph Algorithms: The priority queues are especially used in Graph Algorithms like *Dijkstra’s Shortest Path* and *Prim’s Minimum Spanning Tree*.
+
+4) Many problems can be efficiently solved using Heaps. See following for example.
+                a) K’th Largest Element in an array.
+                b) Sort an almost sorted array.
+                c) Merge K Sorted Arrays.
