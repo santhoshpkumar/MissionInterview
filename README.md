@@ -22,6 +22,25 @@ Interview preparation - Java - Algorithms - Data Structures
         AVL Trees
         Red-Black Trees
 
+#### Segment tree 
+stores intervals, and optimized for "which of these intervals contains a given point" queries.
+
+#### Interval tree 
+stores intervals as well, but optimized for "which of these intervals overlap with a given interval" queries. It can also be used for point queries - similar to segment tree.
+
+#### Range tree 
+stores points, and optimized for "which points fall within a given interval" queries.
+
+#### Binary indexed or Febwick tree 
+stores items-count per index, and optimized for "how many items are there between index m and n" queries.
+
+#### Performance / Space consumption for one dimension:
+
+                Segment tree - O(n logn) preprocessing time, O(k+logn) query time, O(n logn) space
+                Interval tree - O(n logn) preprocessing time, O(k+logn) query time, O(n) space
+                Range tree - O(n logn) preprocessing time, O(k+logn) query time, O(n) space
+                Binary Indexed tree (Fenwick Tree) - O(n logn) preprocessing time, O(logn) query time, O(n) space
+
 ## B-Tree
 
 ## B+ Tees
