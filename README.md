@@ -76,3 +76,7 @@ stores items-count per index, and optimized for "how many items are there betwee
         Boyer-Moore
         Rabin-Karp
       
+## Heap
+        Binary Heap
+        Binomial Heap
+        Fibonacci Heap
