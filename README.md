@@ -17,6 +17,11 @@ Interview preparation - Java - Algorithms - Data Structures
         Bucket Sort
 
 ## Binary Trees
+        In order Traversal
+        Pre order Traversal
+        Post order Traversal
+        Level order Traversal
+        Spiral order Traversal
 
 ## Binary Search Tree
         AVL Trees
