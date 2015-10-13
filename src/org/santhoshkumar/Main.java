@@ -7,6 +7,7 @@ import org.santhoshkumar.DynamicProgramming.LongestCommonSubSequence;
 import org.santhoshkumar.DynamicProgramming.LongestPalindromicSubSequence;
 
 import org.santhoshkumar.Sorting.BubbleSort;
+import org.santhoshkumar.Sorting.HeapSort;
 import org.santhoshkumar.Sorting.InsertionSort;
 import org.santhoshkumar.Sorting.SelectionSort;
 
@@ -39,15 +40,23 @@ public class Main {
         bs.input = new int[]{9,8,7,6,5,4,3,2,1,0};
         bs.sort();
         bs.print();
+
         System.out.println("Selection Sort");
         SelectionSort ss = new SelectionSort();
         ss.input = new int[]{9,8,7,6,5,4,3,2,1,0};
         ss.sort();
         ss.print();
+
         System.out.println("Insertion Sort");
         InsertionSort is = new InsertionSort();
         is.input = new int[]{9,8,7,6,5,4,3,2,1,0};
         is.sort();
         is.print();
+
+        System.out.println("Heap Sort");
+        HeapSort hs = new HeapSort();
+        hs.input = new int[]{9,8,7,6,5,4,3,2,1,0};
+        hs.sort();
+        hs.print();
     }
 }
