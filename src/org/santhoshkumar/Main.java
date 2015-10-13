@@ -61,5 +61,11 @@ public class Main {
         ms.input = new int[]{9,8,7,6,5,4,3,2,1,0};
         ms.sort();
         ms.print();
+
+        System.out.println("Quick Sort");
+        QuickSort qs = new QuickSort();
+        qs.input = new int[]{9,8,7,6,5,4,3,2,1,0};
+        qs.sort();
+        qs.print();
     }
 }
