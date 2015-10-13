@@ -23,7 +23,7 @@ Interview preparation - Java - Algorithms - Data Structures
 
 + Partitioning happen around pivot, which is usually middle element of array.
 
-+ Average case time complexity of Quicksort is O(n log n) and worst case time complexity is O(n ^2), which makes it one of the fasted sorting algorithm. 
++ Average case time complexity of Quicksort is O(n log n) and worst case time complexity is O(n^2), which makes it one of the fasted sorting algorithm. 
 
 ## Binary Trees
         In order Traversal
