@@ -6,10 +6,7 @@ import org.santhoshkumar.Arrays.SuperSet;
 import org.santhoshkumar.DynamicProgramming.LongestCommonSubSequence;
 import org.santhoshkumar.DynamicProgramming.LongestPalindromicSubSequence;
 
-import org.santhoshkumar.Sorting.BubbleSort;
-import org.santhoshkumar.Sorting.HeapSort;
-import org.santhoshkumar.Sorting.InsertionSort;
-import org.santhoshkumar.Sorting.SelectionSort;
+import org.santhoshkumar.Sorting.*;
 
 public class Main {
 
@@ -58,5 +55,11 @@ public class Main {
         hs.input = new int[]{9,8,7,6,5,4,3,2,1,0};
         hs.sort();
         hs.print();
+
+        System.out.println("Merge Sort");
+        MergeSort ms = new MergeSort();
+        ms.input = new int[]{9,8,7,6,5,4,3,2,1,0};
+        ms.sort();
+        ms.print();
     }
 }
