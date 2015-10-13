@@ -6,6 +6,8 @@ import org.santhoshkumar.Arrays.SuperSet;
 import org.santhoshkumar.DynamicProgramming.LongestCommonSubSequence;
 import org.santhoshkumar.DynamicProgramming.LongestPalindromicSubSequence;
 
+import org.santhoshkumar.Sorting.BubbleSort;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -28,5 +30,12 @@ public class Main {
         System.out.println("Super Set");
         SuperSet ss = new SuperSet();
         ss.solve(new String("ABCD"));
+
+        //Sorting
+        System.out.println("Bubble Sort");
+        BubbleSort bs = new BubbleSort();
+        bs.input = new int[]{9,8,7,6,5,4,3,2,1,0};
+        bs.sort();
+        bs.print();
     }
 }
