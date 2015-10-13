@@ -3,6 +3,8 @@ package org.santhoshkumar;
 import org.santhoshkumar.Arrays.PrintAllCombination;
 import org.santhoshkumar.Arrays.PrintAllPermutation;
 import org.santhoshkumar.Arrays.SuperSet;
+import org.santhoshkumar.Arrays.WordIsPalindrome;
+import org.santhoshkumar.Backtracking.PrintAllPermutations;
 import org.santhoshkumar.DynamicProgramming.LongestCommonSubSequence;
 import org.santhoshkumar.DynamicProgramming.LongestPalindromicSubSequence;
 
@@ -67,5 +69,15 @@ public class Main {
         qs.input = new int[]{9,8,7,6,5,4,3,2,1,0};
         qs.sort();
         qs.print();
+
+        System.out.println("Backtracking: Print all permutations");
+        PrintAllPermutations permute = new PrintAllPermutations();
+        permute.print(new String("BT"));
+
+        System.out.println("Is String Palindrome");
+        WordIsPalindrome isWordPalindrome = new WordIsPalindrome();
+        System.out.println(isWordPalindrome.check(new String("SANAS")));
+        System.out.println(isWordPalindrome.check(new String("SANA")));
+
     }
 }
