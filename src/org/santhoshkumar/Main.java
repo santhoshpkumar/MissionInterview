@@ -1,9 +1,6 @@
 package org.santhoshkumar;
 
-import org.santhoshkumar.Arrays.PrintAllCombination;
-import org.santhoshkumar.Arrays.PrintAllPermutation;
-import org.santhoshkumar.Arrays.SuperSet;
-import org.santhoshkumar.Arrays.WordIsPalindrome;
+import org.santhoshkumar.Arrays.*;
 import org.santhoshkumar.Backtracking.PrintAllPermutations;
 import org.santhoshkumar.DynamicProgramming.LongestCommonSubSequence;
 import org.santhoshkumar.DynamicProgramming.LongestPalindromicSubSequence;
@@ -79,5 +76,9 @@ public class Main {
         System.out.println(isWordPalindrome.check(new String("SANAS")));
         System.out.println(isWordPalindrome.check(new String("SANA")));
 
+        System.out.println("Are Strings Anagrams");
+        WordsAreAngrams areWordAnagrams = new WordsAreAngrams();
+        System.out.println(areWordAnagrams.check("SANAS", "SABNS"));
+        System.out.println(areWordAnagrams.check("SANAS", "SAANS"));
     }
 }
