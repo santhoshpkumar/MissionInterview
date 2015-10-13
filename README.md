@@ -16,6 +16,15 @@ Interview preparation - Java - Algorithms - Data Structures
           MSD Vs LSD
         Bucket Sort
 
+####Quick Sort
++ QuickSort is a divide and conquer algorithm. Large list is divided into two and sorted separately (conquered), sorted list is merge later.
+
++ On "in-place" implementation of quick sort, list is sorted using same array, no additional array is required. Numbers are re-arranged pivot, also known as partitioning.
+
++ Partitioning happen around pivot, which is usually middle element of array.
+
++ Average case time complexity of Quicksort is O(n log n) and worst case time complexity is O(n ^2), which makes it one of the fasted sorting algorithm. 
+
 ## Binary Trees
         In order Traversal
         Pre order Traversal
