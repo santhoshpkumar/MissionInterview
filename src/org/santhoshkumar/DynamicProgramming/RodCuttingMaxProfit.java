@@ -35,11 +35,26 @@ public class RodCuttingMaxProfit {
 
     // Top down without recursion
     public int solveMax(){
-        return -1;
+        int[] sol = new int[cost.length+1];
+        sol[0] = -1;
+
+        for(int i = 1; i <= cost.length; i++){
+            for( int j = i ; j <= cost.length; j++){
+                sol[j] = Math.max(sol[j], sol[j-i] + cost[i-1]);
+            }
+        }
+        return sol[cost.length];
     }
 
     // Top down using recursion
-    public int solveMaxRecursive(){
-        return -1;
+    public int solveMaxRecur(int length){
+        if(length <= 0){
+            return 0;
+        }
+        int max = 0;
+        for(int i=0; i < length; i++){
+            max = Math.max(max, cost[i] + solveMaxRecur(length - i - 1));
+        }
+        return max;
     }
 }
