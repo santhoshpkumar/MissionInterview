@@ -109,5 +109,14 @@ public class Main {
             System.out.print(coin+" ");
         }
         System.out.println(" = "+coinsTotalWaysChange.solve(5));
+
+        System.out.println("Coin Change min coins:");
+        CoinChangeMinCoins coinsMinChange = new CoinChangeMinCoins();
+        coinsMinChange.coins = new int[]{2,3,5};
+        System.out.print("Coins: ");
+        for(int coin: coinsMinChange.coins){
+            System.out.print(coin+" ");
+        }
+        System.out.println(" = "+coinsMinChange.solve(5));
     }
 }
