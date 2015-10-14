@@ -25,6 +25,8 @@ Interview preparation - Java - Algorithms - Data Structures
 
 + Average case time complexity of Quicksort is O(n log n) and worst case time complexity is O(n^2), which makes it one of the fasted sorting algorithm. 
 
++ How nlogn? Each partitioning operation takes O(n) operations (one pass on the array). In average, each partitioning divides the array to two parts (which sums up to log n operations). In total we have O(n * log n) operations.
+
 ## Binary Trees
         In order Traversal
         Pre order Traversal
