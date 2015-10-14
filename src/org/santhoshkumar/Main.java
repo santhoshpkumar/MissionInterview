@@ -2,10 +2,7 @@ package org.santhoshkumar;
 
 import org.santhoshkumar.Arrays.*;
 import org.santhoshkumar.Backtracking.PrintAllPermutations;
-import org.santhoshkumar.DynamicProgramming.AllPathsTwoDimArray;
-import org.santhoshkumar.DynamicProgramming.LongestCommonSubSequence;
-import org.santhoshkumar.DynamicProgramming.LongestIncreasingSubSequence;
-import org.santhoshkumar.DynamicProgramming.LongestPalindromicSubSequence;
+import org.santhoshkumar.DynamicProgramming.*;
 
 import org.santhoshkumar.Sorting.*;
 
@@ -102,7 +99,15 @@ public class Main {
                 + p.countAllRecursion(0, 0));
         System.out.println("No of paths By Dynamic Programming: "
                 + p.countAllDynamic(a));
-
         p.printAllDynamic(0, 0, "");
+
+        System.out.println("Coin Change total ways:");
+        CoinChangeTotalWays coinsTotalWaysChange = new CoinChangeTotalWays();
+        coinsTotalWaysChange.coins = new int[]{2,3,5};
+        System.out.print("Coins: ");
+        for(int coin: coinsTotalWaysChange.coins){
+            System.out.print(coin+" ");
+        }
+        System.out.println(" = "+coinsTotalWaysChange.solve(5));
     }
 }
