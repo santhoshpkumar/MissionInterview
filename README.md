@@ -131,3 +131,15 @@ Applications of Heaps:
                 a) K’th Largest Element in an array.
                 b) Sort an almost sorted array.
                 c) Merge K Sorted Arrays.
+
+
+## Miscellaneous 
+ 
+ + Given a list of strings, group anagrams - Sort each string and finally sort the entire collection. 
+ 
+ + Merge sort implementation using linked list
+ 
+ + Kadane's algorithm (Linear time algorithm) - the maximum subarray problem is the task of finding the contiguous subarray within a one-dimensional 
+ array of numbers (containing at least one positive number) which has the largest sum. 
+ For example, for the sequence of values −2, 1, −3, 4, −1, 2, 1, −5, 4; the contiguous subarray with the largest sum is 4, −1, 2, 1, with sum 6. 
+ 
