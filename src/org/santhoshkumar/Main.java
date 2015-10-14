@@ -2,6 +2,7 @@ package org.santhoshkumar;
 
 import org.santhoshkumar.Arrays.*;
 import org.santhoshkumar.Backtracking.PrintAllPermutations;
+import org.santhoshkumar.DynamicProgramming.AllPathsTwoDimArray;
 import org.santhoshkumar.DynamicProgramming.LongestCommonSubSequence;
 import org.santhoshkumar.DynamicProgramming.LongestIncreasingSubSequence;
 import org.santhoshkumar.DynamicProgramming.LongestPalindromicSubSequence;
@@ -92,5 +93,16 @@ public class Main {
         System.out.println();
         System.out.println("Longest SubSequence Length: "+lcss.find());
         lcss.print();
+
+        int[][] a = {   { 1, 2, 3 },
+                        { 4, 5, 6 },
+                        { 7, 8, 9 } };
+        AllPathsTwoDimArray p = new AllPathsTwoDimArray(a);
+        System.out.println("No of Paths By Recursion: "
+                + p.countAllRecursion(0, 0));
+        System.out.println("No of paths By Dynamic Programming: "
+                + p.countAllDynamic(a));
+
+        p.printAllDynamic(0, 0, "");
     }
 }
