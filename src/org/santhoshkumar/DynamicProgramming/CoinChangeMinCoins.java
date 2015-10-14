@@ -2,7 +2,7 @@ package org.santhoshkumar.DynamicProgramming;
 
 /**
  * Created by sk010962 on 10/14/2015.
- *  * Objective: Given a set of coins and amount, Write an algorithm to find out how minimum no of coins required to make change for the given amount.
+ * Objective: Given a set of coins and amount, Write an algorithm to find out how minimum no of coins required to make change for the given amount.
 
  Example:
  Amount = 5
