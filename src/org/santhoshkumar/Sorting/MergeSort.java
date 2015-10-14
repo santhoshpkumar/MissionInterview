@@ -2,7 +2,16 @@ package org.santhoshkumar.Sorting;
 
 /**
  * Created by sk010962 on 10/13/2015.
+ *
+ * Time Complexity
+ *
+     time to mergesort N elements = time to mergesort N/2 elements plus
+                                    time to merge two arrays each N/2 elements.
+
+     Time to merge two arrays each N/2 elements is linear, i.e. N
+     Each partition splits the array into half, i.e log N
  */
+
 public class MergeSort {
     public int[] input;
     public int[] mergeHelper;

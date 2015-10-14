@@ -2,7 +2,20 @@ package org.santhoshkumar.Sorting;
 
 /**
  * Created by sk010962 on 10/13/2015.
+ *
+ * Time Complexity:
+
+     Recurrence relation based on the code
+
+     - the for loop stops when the indexes cross, hence there are N iterations
+     - swap is one operation – disregarded
+     Two recursive calls:
+        Best case: each call is on half the array, hence time is 2T(N/2)
+        Worst case: one array is empty, the other is N-1 elements, hence time is T(N-1)
+
  */
+
+
 public class QuickSort {
     public int[] input;
 
