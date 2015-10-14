@@ -18,7 +18,7 @@ public class LongestBitonicSequence {
             right[i] = 1;
         }
 
-        for(int i=1; i < input.length ; i++){
+        for(int i = 1; i < input.length ; i++){
             for (int j = 0 ; j < i ; j++){
                 if(input[i] > input[j] ) {
                     left[i] = Math.max(left[i], 1 + left[j]);
@@ -26,7 +26,7 @@ public class LongestBitonicSequence {
             }
         }
 
-        for(int i=input.length-2; i >= 0 ; i--){
+        for(int i = input.length-2; i >= 0 ; i--){
             for (int j = input.length-1 ; j > i ; j--){
                 if(input[i] > input[j] ) {
                     right[i] = Math.max(right[i], 1 + right[j]);
