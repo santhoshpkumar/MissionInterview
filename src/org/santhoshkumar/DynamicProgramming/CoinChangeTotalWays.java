@@ -14,6 +14,22 @@ package org.santhoshkumar.DynamicProgramming;
 public class CoinChangeTotalWays {
     public int[] coins;
 
+    //Top down recursive solution
+    public int solveTotal(int n, int i) {
+        if (n < 0) {
+            return 0;
+        }
+        if (n == 0) {
+            return 1;
+        }
+        // means coins over and n>0 so no solution
+        if (i == coins.length && n > 0) {
+            return 0;
+        }
+        return solveTotal(n - coins[i], i) + solveTotal(n, i + 1);
+    }
+
+    // Bottom up DP solution
     public int solve(int count){
         int rows = coins.length+1;
         int cols = count+1;
