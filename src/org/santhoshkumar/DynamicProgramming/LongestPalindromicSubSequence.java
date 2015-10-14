@@ -5,6 +5,7 @@ package org.santhoshkumar.DynamicProgramming;
  */
 public class LongestPalindromicSubSequence {
 
+    // Recursive solution without memorization
     public int findRecursive(String input){
         //System.out.println(input);
         if(input.length() <= 0){
@@ -22,6 +23,7 @@ public class LongestPalindromicSubSequence {
         }
     }
 
+    // Bottom up Dynamic programming approach
     public int findPalindrome(String input){
         int length = input.length();
         int[][] matrix = new int[length][length];

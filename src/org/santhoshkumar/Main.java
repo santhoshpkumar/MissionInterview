@@ -3,6 +3,7 @@ package org.santhoshkumar;
 import org.santhoshkumar.Arrays.*;
 import org.santhoshkumar.Backtracking.PrintAllPermutations;
 import org.santhoshkumar.DynamicProgramming.LongestCommonSubSequence;
+import org.santhoshkumar.DynamicProgramming.LongestIncreasingSubSequence;
 import org.santhoshkumar.DynamicProgramming.LongestPalindromicSubSequence;
 
 import org.santhoshkumar.Sorting.*;
@@ -80,5 +81,16 @@ public class Main {
         WordsAreAngrams areWordAnagrams = new WordsAreAngrams();
         System.out.println(areWordAnagrams.check("SANAS", "SABNS"));
         System.out.println(areWordAnagrams.check("SANAS", "SAANS"));
+
+        System.out.println("Longest Increasing SubSequence");
+        LongestIncreasingSubSequence lcss = new LongestIncreasingSubSequence();
+        lcss.input = new int[]{ 10, 22, 9, 33, 21, 50, 41, 60, 80 };
+        System.out.print("Given Sequence: ");
+        for(int data: lcss.input){
+            System.out.print(data+ " ");
+        }
+        System.out.println();
+        System.out.println("Longest SubSequence Length: "+lcss.find());
+        lcss.print();
     }
 }
