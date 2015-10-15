@@ -75,7 +75,27 @@ Interview preparation - Java - Algorithms - Data Structures
  **Prim’s Minimum Spanning Tree:** In Prim’s algorithm also, we create a MST by picking edges one by one. We maintain two sets: set of the vertices already included in MST and the set of the vertices not yet included. The Greedy Choice is to pick the smallest weight edge that connects the two sets.
  
  **Dijkstra’s Shortest Path:** The Dijkstra’s algorithm is very similar to Prim’s algorithm. The shortest path tree is built up, edge by edge. We maintain two sets: set of the vertices already included in the tree and the set of the vertices not yet included. The Greedy Choice is to pick the edge that connects the two sets and is on the smallest weight path from source to the set that contains not yet included vertices.
-        
+     
+ **Single source shortest path (SSSP)** :
+ 
+ Dijkstra's algorithm :  solves the single-source shortest path problem.
+  
+  + *constrains : no Negative edges.*
+  + *unweighted graph : Dijekstra == BFS ( Breadth First Search )*
+ 
+ Bellman–Ford algorithm : solves the single-source problem where edge weights may be negative. O(EV)
+ 
+ *Time Complexity*
+ + Undirected graph - O(E + V log V) - dijkstra
+ + Unweighted graph - O(E + V) - BFS
+ + Directed acyclic graphs - O(E + V) - topological sorting
+
+ **All pair sotest path (APSP)** :
+ 
+ Floyd–Warshall algorithm : solves all pairs shortest paths. Handles both +ve / -ve edges. O(V^3)
+ 
+  + *Constraints : Cannot handle Negative cycles (an edge which comes back to the same vertex which we started with but with a path length less than zero)*
+ 
 ## Dynamic Programming
 
 ## Huffman Coding
