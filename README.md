@@ -83,9 +83,9 @@ Interview preparation - Java - Algorithms - Data Structures
   + *constrains : no Negative edges.*
   + *unweighted graph : Dijekstra == BFS ( Breadth First Search )*
  
- Bellman–Ford algorithm : solves the single-source problem where edge weights may be negative. O(EV)
+Bellman–Ford algorithm : solves the single-source problem where edge weights may be negative. O(EV)
  
- *Time Complexity*
+*Time Complexity*
  + Undirected graph - O(E + V log V) - dijkstra
  + Unweighted graph - O(E + V) - BFS
  + Directed acyclic graphs - O(E + V) - topological sorting
