@@ -76,7 +76,7 @@ Interview preparation - Java - Algorithms - Data Structures
  
  **Dijkstra’s Shortest Path:** The Dijkstra’s algorithm is very similar to Prim’s algorithm. The shortest path tree is built up, edge by edge. We maintain two sets: set of the vertices already included in the tree and the set of the vertices not yet included. The Greedy Choice is to pick the edge that connects the two sets and is on the smallest weight path from source to the set that contains not yet included vertices.
      
- **Single source shortest path (SSSP)** : 
+**Single source shortest path (SSSP)** : 
  
  Dijkstra's algorithm :  solves the single-source shortest path problem.
   
@@ -90,7 +90,7 @@ Interview preparation - Java - Algorithms - Data Structures
  + Unweighted graph - O(E + V) - BFS
  + Directed acyclic graphs - O(E + V) - topological sorting
 
- **All pair sotest path (APSP)** : 
+**All pair sotest path (APSP)** : 
  
  Floyd–Warshall algorithm : solves all pairs shortest paths. Handles both +ve / -ve edges. O(V^3)
  
