@@ -82,7 +82,6 @@ public class GraphDfs {
         }
     }
 
-
     public void print() {
         System.out.println();
         for (int v=0; v < vertices.length; v++) {
