@@ -60,13 +60,17 @@ Interview preparation - Java - Algorithms - Data Structures
 ## Linked List
 
 ## Graphs
-        Dijkstra's Shortest Path
-        Prim's Minimum Cost Spanning Tree
+        Dijkstra's Single Source Shortest Path algorithm
+        Bellman–Ford Single Source Shortest Path algorithm
         Floyd-Warshall (all pairs shortest paths)
+        
+        Prim's Minimum Cost Spanning Tree
         Kruskal Minimum Cost Spanning Tree Algorithm
+        
         Topological Sort
         Breadth-First Search
         Depth-First Search
+        
         Connected Components - Adjacency List Representation
         Connected Components - Adjacency Matrix Representation
  
