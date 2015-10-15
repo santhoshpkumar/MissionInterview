@@ -4,6 +4,7 @@ package org.santhoshkumar.Graphs;
  * Created by santhoshkumar on 15/10/15.
  */
 public class AdjacencyList {
+
 }
 
 class Neighbor {
