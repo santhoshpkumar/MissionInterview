@@ -27,7 +27,7 @@ public class KnuthMorrisPratt {
         }
     }
 
-    public boolean find(String givenString, String pattern) {
+    public boolean search(String givenString, String pattern) {
         preProcess(pattern);
         int i = 0, j = 0;
         while (i < givenString.length() && j < pattern.length()) {
