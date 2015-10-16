@@ -140,6 +140,17 @@ Examples:
 
 Unlike the Naive algo where we slide the pattern by one, we use a value from lps[] to decide the next sliding position. Let us see how we do that. When we compare pat[j] with txt[i] and see a mismatch, we know that characters pat[0..j-1] match with txt[i-j+1…i-1], and we also know that lps[j-1] characters of pat[0…j-1] are both proper prefix and suffix which means we do not need to match these lps[j-1] characters with txt[i-j…i-1] because we know that these characters will anyway match.
 
+**Boyer-Moore**
+ 
+Boyer-Moore algorithm "is an efficient string searching algorithm that is the standard benchmark for practical string search literature. It was developed by Robert S. Boyer and J Strother Moore in 1977. The algorithm preprocesses the string being searched for (the pattern), but not the string being searched in (the text). The Boyer-Moore algorithm uses information gathered during the preprocess step to skip sections of the text, resulting in a lower constant factor than many other string algorithms. In general, the algorithm runs faster as the pattern length increases".
+
+The BM algorithm have two shifting functions: bad character rule (occurrence shift) and the good suffix rule (matching shift):
+
++ The bad character rule keeps information about how pattern matches against shifts of itself. This information is to avoid useless shifts of the pattern.
+
++ The good suffix rule uses the prefix function, the pattern and the text as inputs to find the occurrence of the pattern within the text and returns the number of shifts after the first occurrence.
+
+
 **Rabin-Karp** 
 
 Rabin Karp algorithm matches the hash value of the pattern with the hash value of current substring of text, and if the hash values match only then it starts matching individual characters. So Rabin Karp algorithm needs to calculate hash values for following strings.
