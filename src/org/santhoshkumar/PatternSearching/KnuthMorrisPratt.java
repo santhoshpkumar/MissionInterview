@@ -4,23 +4,23 @@ package org.santhoshkumar.PatternSearching;
  * Created by sk010962 on 10/16/2015.
  */
 public class KnuthMorrisPratt {
-    int[] dfa;
+    int[] nfa;
 
-    //Build the lsp (longest proper prefix which is also suffix) array which will be our -> Deterministic Finite State Automaton (DFA)
+    //Build the lsp (longest proper prefix which is also suffix) array which will be our -> Non-Deterministic Finite State Automaton
     public void preProcess(String pattern) {
-        dfa = new int[pattern.length()];
-        dfa[0] = 0;
+        nfa = new int[pattern.length()];
+        nfa[0] = 0;
         int j = 0;
         for (int i = 1; i < pattern.length(); ) {
             if (pattern.charAt(i) == pattern.charAt(j)) {
-                dfa[i] = j + 1;
+                nfa[i] = j + 1;
                 j++;
                 i++;
             } else {
                 if (j != 0) {
-                    j = dfa[j - 1];
+                    j = nfa[j - 1];
                 } else {
-                    dfa[i] = 0;
+                    nfa[i] = 0;
                     i++;
                 }
             }
@@ -38,7 +38,7 @@ public class KnuthMorrisPratt {
                 if (j == 0) {
                     i++;
                 } else {
-                    j = dfa[j - 1];
+                    j = nfa[j - 1];
                 }
             }
         }
