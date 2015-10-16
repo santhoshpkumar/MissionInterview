@@ -148,7 +148,9 @@ Rabin Karp algorithm matches the hash value of the pattern with the hash value o
 + All the substrings of text of pattern length (m).
 
 The average and best case running time of the Rabin-Karp algorithm is O(n+m), but its worst-case time is O(nm). Worst case of Rabin-Karp algorithm occurs when all characters of pattern and text are same as the hash values of all the substrings of txt[] match with hash value of pat[]. For example pat[] = “AAA” and txt[] = “AAAAAAA”.
-   
+
+**Substring search applications:** Pattern in streaming input, Screen scraping
+
 ## Heap
         Binary Heap
         Binomial Heap
