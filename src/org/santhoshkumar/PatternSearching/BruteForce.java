@@ -11,7 +11,7 @@ package org.santhoshkumar.PatternSearching;
  *
  */
 public class BruteForce {
-    public int find(String givenString, String pattern){
+    public int search(String givenString, String pattern){
         int strLength = givenString.length();
         int patLength = pattern.length();
 
@@ -30,7 +30,7 @@ public class BruteForce {
     }
 
     // Alternate explicit backup
-    public int find2(String givenString, String pattern) {
+    public int search2(String givenString, String pattern) {
         int i, strLength = givenString.length();
         int j, patLength = pattern.length();
 
