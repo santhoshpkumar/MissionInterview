@@ -122,7 +122,7 @@ The important thing to note here is the time complexity. Sure, we could construc
 
 **Rabin-Karp** 
 
-Rabin Karp algorithm matches the hash value of the pattern with the hash value of current substring of text, and if the hash values match then only it starts matching individual characters. So Rabin Karp algorithm needs to calculate hash values for following strings.
+Rabin Karp algorithm matches the hash value of the pattern with the hash value of current substring of text, and if the hash values match only then it starts matching individual characters. So Rabin Karp algorithm needs to calculate hash values for following strings.
 
 + Pattern itself (length m).
 + All the substrings of text of pattern length (m).
