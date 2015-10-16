@@ -119,7 +119,14 @@ The important thing to note here is the time complexity. Sure, we could construc
         Knuth-Morris Pratt
         Boyer-Moore
         Rabin-Karp
-**Rabin-Karp**    
+
+**Rabin-Karp** 
+
+Rabin Karp algorithm matches the hash value of the pattern with the hash value of current substring of text, and if the hash values match then only it starts matching individual characters. So Rabin Karp algorithm needs to calculate hash values for following strings.
+
++ Pattern itself (length m).
++ All the substrings of text of pattern length (m).
+
 The average and best case running time of the Rabin-Karp algorithm is O(n+m), but its worst-case time is O(nm). Worst case of Rabin-Karp algorithm occurs when all characters of pattern and text are same as the hash values of all the substrings of txt[] match with hash value of pat[]. For example pat[] = “AAA” and txt[] = “AAAAAAA”.
    
 ## Heap
