@@ -4,7 +4,7 @@ package org.santhoshkumar.PatternSearching;
  * Created by sk010962 on 10/16/2015.
  *
  * Constraint: Brute-force algorithm needs backup for every mismatch.
- * Solution: 1. Use pattern size buffer buffer
+ * Solution: 1. Use pattern size buffer buffer for backup
  *           2. Use better algorithm
  *
  */
