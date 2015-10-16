@@ -105,6 +105,21 @@ Bellman–Ford algorithm : solves the single-source problem where edge weights m
 ## Huffman Coding
 Huffman Coding is a loss-less compression technique. It assigns variable length bit codes to different characters. The Greedy Choice is to assign least bit length code to the most frequent character.
 
+Morse is not a prefix-free code
+
+Huffman is a prefix-free code
+
+Huffman coding solves this problem.  The methodology used for Huffman coding results in a prefix-free code.  A prefix-free code is one in which the bit coding sequence representing some particular character is never a prefix of the bit coding sequence representing any other character.  For example, here is a possible bit sequence for a Huffman code on an alphabet with four characters where D is the most probable and A is the least probable:
+        
+        A 110
+        D 0
+        C 10
+        B 111
+
+Code length is based on probability of occurrence - As with Morse code, the methodology used for the Huffman coding causes the bit coding sequence to be shortest for the most frequently occurring characters, and causes the coding sequence to be longest for the least frequently occurring characters.  Unlike the Morse code, however, the probabilities for Huffman are usually determined on a message-by-message basis instead of being based on some general overall expectation of the probability of occurrence of the characters.
+
+Message-by-message probabilities - The upside of determining the probabilities on a message-by-message basis is that the encoding can be optimized for each specific message.  The downside is that the probability encoding table used to encode a specific message must also be used to decode the message.  The requirement to transport the encoding table along with the message adds some overhead to the overall process.
+
 ## Tries
 
 A **prefix tree**, or **trie** (often pronounced "try"), is a tree whose nodes don't hold keys, but rather, hold partial keys.  For example, if you have a prefix tree that stores strings, then each node would be a character of a string.  If you have a prefix tree that stores arrays, each node would be an element of that array.  The elements are ordered from the root.  So if you had a prefix tree with the word "hello" in it, then the root node would have a child "h," and the "h" node would have a child, "e," and the "e" node would have a child node "l," etc.  The deepest node of a key would have some sort of boolean flag on it indicating that it is the terminal node of some key.  (This is important because the last node of a key isn't always a leaf node... consider a prefix tree with "dog" and "doggy" in it).  Prefix trees are good for looking up keys with a particular prefix.
