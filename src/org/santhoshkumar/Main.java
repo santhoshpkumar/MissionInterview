@@ -4,6 +4,7 @@ import org.santhoshkumar.Arrays.*;
 import org.santhoshkumar.Backtracking.PrintAllPermutations;
 import org.santhoshkumar.DynamicProgramming.*;
 
+import org.santhoshkumar.Encoding.HuffmanCode;
 import org.santhoshkumar.Sorting.*;
 
 public class Main {
@@ -118,5 +119,14 @@ public class Main {
             System.out.print(coin+" ");
         }
         System.out.println(" = "+coinsMinChange.solve(5));
+
+
+        String test = "this is an example for huffman encoding";
+        // build tree
+        HuffmanCode hCode = new HuffmanCode(test);
+        hCode.buildTree();
+        // print out results
+        System.out.println("SYMBOL\tWEIGHT\tHUFFMAN CODE");
+        hCode.print();
     }
 }
