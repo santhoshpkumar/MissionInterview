@@ -7,6 +7,8 @@ package org.santhoshkumar.PatternSearching;
  * Solution: 1. Use pattern size buffer buffer for backup
  *           2. Use better algorithm
  *
+ *
+ *
  */
 public class BruteForce {
     public int find(String givenString, String pattern){
