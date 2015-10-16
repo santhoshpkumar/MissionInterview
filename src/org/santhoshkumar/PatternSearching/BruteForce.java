@@ -2,6 +2,9 @@ package org.santhoshkumar.PatternSearching;
 
 /**
  * Created by sk010962 on 10/16/2015.
+ *
+ * Note: Brute-force algorithm needs backup for every mismatch.
+ *
  */
 public class BruteForce {
     public int find(String givenString, String pattern){
