@@ -53,9 +53,11 @@ Interview preparation - Java - Algorithms - Data Structures
                 Range tree - O(n logn) preprocessing time, O(k+logn) query time, O(n) space
                 Binary Indexed tree (Fenwick Tree) - O(n logn) preprocessing time, O(logn) query time, O(n) space
 
-## B-Tree
+## Disk Based Data Structures
 
-## B+ Tees
+#### B-Tree
+
+#### B+ Tees
 
 ## Linked List
 
@@ -102,7 +104,8 @@ Bellman–Ford algorithm : solves the single-source problem where edge weights m
  
 ## Dynamic Programming
 
-## Huffman Coding
+## Encoding
+#### Huffman Coding
 Huffman Coding is a loss-less compression technique. It assigns variable length bit codes to different characters. The Greedy Choice is to assign least bit length code to the most frequent character.
 
 Morse is not a prefix-free code
@@ -213,6 +216,28 @@ Applications of Heaps:
                 b) Sort an almost sorted array.
                 c) Merge K Sorted Arrays.
 
+## Caching Replacement 
+
+"Caching is a temp location where we store data in (data that we need it frequently) as the original data is expensive to be fetched, with caching we can retrieve required data faster. "
+
+Caching is made of pool of entries and these entries are a copy of real data which are in storage (database for example) and it is tagged with a tag (key identifier) value for retrieval.
+
+Cache Hit: If an entry can be found with a tag matching that of the desired data (say product Id), the entry is used instead. This is known as a cache hit (cache hit is the primary measurement for the caching effectiveness we will discuss that later on).
+And the percentage of accesses that result in cache hits is known as the hit rate or hit ratio of the cache.
+
+Cache Miss: On the contrary when the tag isn’t found in the cache (no match were found) this is known as cache miss , a hit to the back storage is made and the data is fetched back and it is placed in the cache so in future hits it will be found and will make a cache hit.
+
+Replacement Policy: When cache miss happens, the cache ejects some other entry in order to make room for the previously uncached data (in case we don’t have enough room). The heuristic used to select the entry to eject is known as the replacement policy.
+
++ Least Frequently Used (LFU)
++ Least Recently Used (LRU)
+    - Least Recently Used 2(LRU2)
+    - Two Queues
++ Most Recently Used (MRU)
++ First in First out (FIFO)
+    - Second Chance
+    - Clock
++ Simple time-based
 
 ## Miscellaneous 
  
