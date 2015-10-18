@@ -5,10 +5,12 @@ package org.santhoshkumar.Misc;
  */
 public class UpperDiagonalMatrixTraverse {
 
-    public void print(){
+    public static void print(){
         int n = 7;
 
         int[][] matrix = new int[n][n];
+
+        System.out.println("Matrix");
 
         for(int i=0; i < n; i++){
             for(int j=0; j < n; j++){
