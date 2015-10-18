@@ -133,5 +133,9 @@ public class Main {
 
         UpperDiagonalMatrixTraverse.print();
         CatalanNumber.print();
+
+        MatrixMultiplicationCost mmc = new MatrixMultiplicationCost();
+        mmc.cost(new int[]{2,3,5,4,3});
+        mmc.print();
     }
 }
