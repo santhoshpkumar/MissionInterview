@@ -6,16 +6,15 @@ package org.santhoshkumar.Trees;
 public class InorderSuccessor {
     Node root;
 
-    public Node getSucessor(Node node){
+    public Node getSuccessor(Node node){
 
         // If node has right child then get the leftmost node of the right subtree
         if (node.right != null){
             return getLeftMost(node.right);
         }
         // If right subtree is null then get the successor will be one of the ancestor node
-
-        // If node is the last right child then sucessor is null
-        return null;
+        return getAncestor(root,node);
+        // If node is the last right child then successor is null
     }
 
     public Node getLeftMost(Node node){
@@ -30,10 +29,23 @@ public class InorderSuccessor {
     }
 
     public Node getAncestor(Node root, Node node){
+        if(root==null) {
+            return null;
+        }
+        Node successor = null;
+        if(root== node||(successor = getAncestor(root.left, node))!=null||(successor=getAncestor(root.right,node))!=null){
+
+            if(successor!=null){
+                if(root.left==successor){
+                    return root;
+                }
+            }
+            return root;
+        }
         return null;
     }
 
-    //Using parent link
+    // Using parent link
     public Node getInOrderSuccessor(Node node){
         if(node.right != null){
             Node current = node.right;
