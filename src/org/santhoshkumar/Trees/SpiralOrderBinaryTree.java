@@ -55,12 +55,3 @@ public class SpiralOrderBinaryTree {
         root.right.right = new Node(80);
     }
 }
-
-class Node{
-    Node left;
-    Node right;
-    int data;
-    Node(int data){
-        this.data = data;
-    }
-}
