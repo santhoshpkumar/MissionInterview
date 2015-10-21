@@ -7,6 +7,7 @@ public class Node{
     Node left;
     Node right;
     Node parent;
+    Node sibling;
     int data;
     Node(int data){
         this.data = data;
