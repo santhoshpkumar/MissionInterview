@@ -8,6 +8,7 @@ import org.santhoshkumar.Encoding.HuffmanCode;
 import org.santhoshkumar.Misc.CatalanNumber;
 import org.santhoshkumar.Misc.UpperDiagonalMatrixTraverse;
 import org.santhoshkumar.Sorting.*;
+import org.santhoshkumar.Trees.IsBinarySearchTree;
 
 public class Main {
 
@@ -135,7 +136,11 @@ public class Main {
         CatalanNumber.print();
 
         MatrixMultiplicationCost mmc = new MatrixMultiplicationCost();
-        mmc.cost(new int[]{2,3,5,4,3});
+        mmc.cost(new int[]{2, 3, 5, 4, 3});
         mmc.print();
+
+        IsBinarySearchTree bst = new IsBinarySearchTree();
+        bst.createTree();
+        System.out.println(bst.evaluate());
     }
 }
