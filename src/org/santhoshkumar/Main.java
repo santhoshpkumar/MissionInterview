@@ -8,6 +8,7 @@ import org.santhoshkumar.Encoding.HuffmanCode;
 import org.santhoshkumar.Misc.CatalanNumber;
 import org.santhoshkumar.Misc.UpperDiagonalMatrixTraverse;
 import org.santhoshkumar.Sorting.*;
+import org.santhoshkumar.Trees.IsBalanced;
 import org.santhoshkumar.Trees.IsBinarySearchTree;
 
 public class Main {
@@ -142,5 +143,9 @@ public class Main {
         IsBinarySearchTree bst = new IsBinarySearchTree();
         bst.createTree();
         System.out.println(bst.evaluate());
+
+        IsBalanced isBalanced = new IsBalanced();
+        isBalanced.createTree();
+        System.out.println(isBalanced.evaluate());
     }
 }
