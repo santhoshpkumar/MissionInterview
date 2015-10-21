@@ -6,4 +6,5 @@ package org.santhoshkumar.Trees;
  * Determine if the binary tree is balanced
  */
 public class isBalanced {
+
 }
