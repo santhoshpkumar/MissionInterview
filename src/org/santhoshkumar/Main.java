@@ -147,5 +147,11 @@ public class Main {
         IsBalanced isBalanced = new IsBalanced();
         isBalanced.createTree();
         System.out.println(isBalanced.evaluate());
+
+        System.out.println("Counting Sort");
+        CountingSort cs = new CountingSort();
+        cs.input = new int[]{9,8,7,6,5,4,3,2,1,0};
+        cs.sort();
+
     }
 }
